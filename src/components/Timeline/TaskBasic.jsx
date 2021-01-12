@@ -5,7 +5,7 @@ import createClasses from '../../utils/classes'
 
 const buildDataAttributes = (attributes = {}) => {
   const value = {}
-  Object.keys(attributes).forEach(name => {
+  Object.keys(attributes).forEach((name) => {
     value[`data-${name}`] = attributes[name]
   })
   return value
@@ -21,16 +21,16 @@ const Basic = ({ title, start, end, classes, dataSet, tooltip }) => (
         // eslint-disable-next-line react/no-danger
         <div dangerouslySetInnerHTML={{ __html: tooltip.split('\n').join('<br>') }} />
       ) : (
+        <div>
+          <div>{title}</div>
           <div>
-            <div>{title}</div>
-            <div>
-              <span>起始</span> {getDayMonth(start)}
-            </div>
-            <div>
-              <span>终止</span> {getDayMonth(end)}
-            </div>
+            <span>Inicio</span> {getDayMonth(start)}
           </div>
-        )}
+          <div>
+            <span>Fim</span> {getDayMonth(end)}
+          </div>
+        </div>
+      )}
     </div>
   </div>
 )
