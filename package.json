@@ -68,6 +68,7 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "react": "^16.14.0",
+    "react-dom/test-utils": "^15.6.2",
     "react-dom": "^16.14.0",
     "rimraf": "^2.6.3"
   },
