@@ -65,10 +65,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^5.0.0",
     "prettier": "^1.18.2",
     "react": "^16.14.0",
-    "react-dom/test-utils": "^15.6.2",
     "react-dom": "^16.14.0",
     "rimraf": "^2.6.3"
   },
