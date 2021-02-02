@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { getDayMonth } from '../../utils/formatDate'
-import createClasses from '../../utils/classes'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { getDayMonth } from '../../utils/formatDate';
+import createClasses from '../../utils/classes';
 
 const buildDataAttributes = (attributes = {}) => {
-  const value = {}
+  const value = {};
   Object.keys(attributes).forEach((name) => {
-    value[`data-${name}`] = attributes[name]
-  })
-  return value
-}
+    value[`data-${name}`] = attributes[name];
+  });
+  return value;
+};
 
 const Basic = ({ title, start, end, classes, dataSet, tooltip }) => (
   <div className={createClasses('rt-task', classes)} {...buildDataAttributes(dataSet)}>
@@ -33,7 +33,7 @@ const Basic = ({ title, start, end, classes, dataSet, tooltip }) => (
       )}
     </div>
   </div>
-)
+);
 
 Basic.propTypes = {
   title: PropTypes.string.isRequired,
@@ -43,6 +43,6 @@ Basic.propTypes = {
   classes: PropTypes.arrayOf(PropTypes.string.isRequired),
   dataSet: PropTypes.shape({}),
   tooltip: PropTypes.string,
-}
+};
 
-export default Basic
+export default Basic;
